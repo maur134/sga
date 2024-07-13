@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>SGA</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>SGA</h2>
+        </div>
+        <nav>
+            <a href="#" class="button1">Acceder</a>
+        </nav>
+    </header>
+    <main>
+        <section class="presentacion">
+            <div class="column1">
+                <h1>Sistema de gestion de</h1>
+                <h1 style="color: var(--color-principal);">Alumnos</h1>
+                <p>Un sistema fácil de usar para registrar y gestionar alumnos, guardando datos personales y académicos de manera eficiente.</p>
+                <a href="#" class="button1">Acceder</a>
+            </div>
+            <div class="column2">
+                
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/descarga (2) copia.png"></div>
+                        <div class="swiper-slide"><img src="img/descarga.png"></div>
+                        <div class="swiper-slide"><img src="img/descarga (1).png"></div>
+                        <div class="swiper-slide"><img src="img/descarga (4).png"></div>
+
+
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+                    <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                <!-- Initialize Swiper -->
+                <script>
+                var swiper = new Swiper(".mySwiper", {
+                    direction: "vertical",
+                    slidesPerView: 1,
+                    loop: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+                </script>
+
+                
+            </div>    
+        </section>
+        <!-- <img class="flechita" src="img/angles-down-solid.svg"> -->
+        <img class="flechita" src="img/arrow-down-solid.svg">
+        <section class="beneficios">
+            <h2>Beneficios</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="img/descarga (7).png">
+                    <div>
+                        <h3>1. Eficiencia</h3>
+                        <p>Simplifica el manejo de inscripciones y seguimiento académico.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/descarga (5).png">
+                    <div>
+                        <h3>2. Seguridad</h3>
+                        <p>Garantiza la protección de datos personales y educativos.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/descarga (6).png">
+                    <div>
+                        <h3>3. Facilidad de Uso</h3>
+                        <p>Interfaz intuitiva para una rápida adopción.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="caracteristicas">
+            <h2>Caracteristicas</h2>
+            <div class="container-carac">
+                <div class="card2">
+                    <img src="img/descarga (8).png">
+                    <div>
+                        <h3>Gestión Integral de Alumnos</h3>
+                        <p>Registro, actualización y baja de alumnos.</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="img/descarga (9).png">
+                    <div>
+                        <h3>Datos Personales y Académicos</h3>
+                        <p>Información completa y actualizada.</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="img/descarga (10).png">
+                    <div>
+                        <h3>Reportes y Análisis</h3>
+                        <p>Generación de reportes detallados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1>SGA</h1>
+        <a href="---">Acceso</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>SGA|Login</title>
+</head>
+<body>
+    <main>
+        <div class="column1">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/descarga (2) copia.png"></div>
+                    <div class="swiper-slide"><img src="img/descarga.png"></div>
+                    <div class="swiper-slide"><img src="img/descarga (1).png"></div>
+                    <div class="swiper-slide"><img src="img/descarga (4).png"></div>
+
+
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+                <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+            var swiper = new Swiper(".mySwiper", {
+                direction: "vertical",
+                slidesPerView: 1,
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+            });
+            </script>
+        </div>
+        <div class="column2">
+            <h1>SGA</h1>
+            <h2>Sistema de Gestión de Alumnos</h2>
+            <form action="">
+                <p class="items-name">Correo electronico</p>
+                <input type="text" name="email" autocomplete="off" placeholder="Introduce tu email" required>
+                <p class="items-name">Contraseña</p>
+                <input type="text" name="pass" autocomplete="off" placeholder="Introduce tu contraseña" required>
+                <div style="width: 100%; display: flex; justify-content: end;">
+                    <input type="submit" class="button1" value="Iniciar sesion">
+                </div>
+            </form>
+            <p>Todos los derechos reservados para mi</p>
+        </div>
+    </main>
+</body>
+</html>
